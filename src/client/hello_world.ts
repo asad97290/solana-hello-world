@@ -199,7 +199,7 @@ export async function checkProgram(): Promise<void> {
  * Say hello
  */
 export async function sayHello(): Promise<void> {
-  console.log('Saying hello to', greetedPubkey.toBase58());
+  // console.log('Saying hello to', greetedPubkey.toBase58());
   const instruction = new TransactionInstruction({
     keys: [{pubkey: greetedPubkey, isSigner: false, isWritable: true}],
     programId,
